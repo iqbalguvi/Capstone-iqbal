@@ -1,7 +1,7 @@
 # Use the official Apache HTTP Server image
-FROM httpd:alpine
+FROM nginx:alpine
 
 # Copy the HTML files into the default Apache directory
-COPY . /usr/local/apache2/htdocs/
+COPY . /usr/share/nginx/html/
 
 EXPOSE 80
